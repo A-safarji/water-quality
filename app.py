@@ -99,5 +99,6 @@ st.write('* 0 = not safe, 1= safe')
 
 st.write('---')
 
-shap.plots.force(prediction[0])
+dta= create_model('gbc')
+st.write(dta)
 
