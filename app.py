@@ -42,7 +42,7 @@ df
 #df_example
 
 if st.checkbox("Show orignal dataframe"):
-	dataframe=pd.read_csv("water1.csv")
+	dataframe=pd.read_csv("waterNew.csv")
 	dataframe.drop('Unnamed: 0', axis=1, inplace=True)
 	dataframe
 
