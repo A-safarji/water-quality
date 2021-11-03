@@ -105,7 +105,7 @@ Session_3 = setup(dataframe, target = 'Potability', session_id=177, log_experime
                   fix_imbalance_method= adasyn1,imputation_type='iterative')
 
 
-
+compare_models()
 dta= create_model('gbc')
 st.write(dta)
 
