@@ -108,5 +108,5 @@ shap.summary_plot(shap_values, input_params)
 st.pyplot(bbox_inches='tight')
 st.write('---')
 
-
+shap.plots.force(prediction[0])
 
