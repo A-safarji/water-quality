@@ -99,7 +99,7 @@ st.write('* 0 = not safe, 1= safe')
 
 st.write('---')
 
-Session_3 = setup(df123, target = 'Potability', session_id=177, log_experiment=True, 
+Session_3 = setup(dataframe, target = 'Potability', session_id=177, log_experiment=True, 
                   experiment_name='Potability2', normalize=True, normalize_method='zscore', 
                   transformation=True, transformation_method = 'quantile', fix_imbalance=True,
                   fix_imbalance_method= adasyn1,imputation_type='iterative')
