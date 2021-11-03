@@ -99,15 +99,5 @@ st.write('* 0 = not safe, 1= safe')
 
 st.write('---')
 
-explainer = shap.TreeExplainer(load_clf)
-shap_values = explainer.shap_values(df)
-
-st.header('Feature Importance')
-st.write('* SHAPE values show how much a given feature changed our prediction')
-plt.title('Feature importance based on SHAP values')
-shap.summary_plot(shap_values, df)
-st.pyplot(bbox_inches='tight')
-st.write('---')
-
 shap.plots.force(prediction[0])
 
