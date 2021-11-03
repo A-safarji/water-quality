@@ -98,7 +98,7 @@ else:
 st.write('* 0 = not safe, 1= safe')
 
 st.write('---')
-explainer  = shap.TreeExplainer(prediction)
+explainer  = shap.TreeExplainer(load_model)
 shap_values = explainer.shap_values(input_params)
 
 st.header('Feature Importance')
