@@ -96,3 +96,17 @@ if(prediction[0]==1):
 else:
 	st.subheader("The water is not safe to drink :warning: :skull:")
 st.write('* 0 = not safe, 1= safe')
+
+st.write('---')
+xplainer = shap.TreeExplainer(load_clf)
+shap_values = explainer.shap_values(prediction)
+
+st.header('Feature Importance')
+st.write('* SHAPE values show how much a given feature changed our prediction')
+plt.title('Feature importance based on SHAP values')
+shap.summary_plot(shap_values, prediction)
+st.pyplot(bbox_inches='tight')
+st.write('---')
+
+
+
