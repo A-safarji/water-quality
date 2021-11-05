@@ -98,6 +98,7 @@ st.write(prediction[0])
 st.write(prediction)
 
 st.write(
+	st.code(prediction)
         """
         # Wait to proccess  
         
@@ -106,7 +107,7 @@ st.write(
         ```python
          
         ```
-        """,prediction
+        """
     )
 
 #st.button("🤡 Click me", key=prediction)
