@@ -97,8 +97,7 @@ st.write(prediction[0])
 #st.write()
 st.write(prediction)
 
-st.write(
-	st.code(prediction)
+st.write(st.code(prediction)
         """
         # Wait to proccess  
         
