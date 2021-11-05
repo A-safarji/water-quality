@@ -89,12 +89,17 @@ load_clf= load_model('dt_saved_07032020')
 prediction=load_clf.predict(input_params)
 st.write('---')
 #st.subheader(":bulb: The Prediction is") 
-st.write(':bulb: The Prediction is' , prediction[0])
-#st.write(prediction)
+
+
+st.markdown(' <p align="center" class="big-font"> Water Prediction  </p>')
+
 st.write(prediction[0])
 #st.write()
 st.write(prediction)
-st.markdown(' <p align="center" class="big-font"> The Prediction is </p>',prediction[0])
+
+
+
+
 if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
 else:
