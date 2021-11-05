@@ -91,7 +91,7 @@ st.write('---')
 #st.subheader(":bulb: The Prediction is") 
 st.header(':bulb: The Prediction is')
 #st.write(prediction)
-st.write(prediction[0][0])
+st.write(prediction[0])
 #st.write()
 st.write(prediction)
 if(prediction[0]==1):
