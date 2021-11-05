@@ -93,7 +93,7 @@ st.header(':bulb: The Prediction is')
 #st.write(prediction)
 st.write(prediction[0])
 #st.write()
-
+st.write(prediction)
 if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
 else:
