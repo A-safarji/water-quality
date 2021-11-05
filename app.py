@@ -92,23 +92,23 @@ st.write('---')
 
 
 st.markdown('<h2 align="center">  Water Prediction </h2>  ', unsafe_allow_html=True)
-
-#st.write(prediction[0])
-#st.write()
-#st.write(prediction)
-st.code(prediction[0])
 st.write(
         """
         # Wait to proccess  
         
         Check your water qulity below 👀 
     
-        ```python
-         
-        ```
+        
         """
     )
+#st.write(prediction[0])
+#st.write()
+#st.write(prediction)
+st.code(prediction[0])
 
+#```python
+         
+#        ```
 #st.button("🤡 Click me", key=prediction)
 #if st.button("🤡 Click me", key=prediction):
    #  st.write('prediction')
