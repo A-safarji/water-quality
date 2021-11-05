@@ -96,7 +96,7 @@ st.write(
         """
         ## Wait to proccess :bulb: 
         
-       * Check your water quality below 👀 
+       * Check your water quality below 👀, 0 = not safe, 1= safe'
     
         
         """
@@ -117,7 +117,7 @@ if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
 else:
 	st.subheader("The water is not safe to drink :warning: :skull:")
-st.write('* 0 = not safe, 1= safe')
+st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
 
