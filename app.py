@@ -106,12 +106,12 @@ st.write(
         ```python
          
         ```
-        """
+        """,prediction
     )
 
 #st.button("🤡 Click me", key=prediction)
-if st.button("🤡 Click me", key=prediction):
-     st.write('prediction')
+#if st.button("🤡 Click me", key=prediction):
+   #  st.write('prediction')
 
 if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
