@@ -91,7 +91,7 @@ st.write('---')
 #st.subheader(":bulb: The Prediction is") 
 
 
-st.markdown(' <p align="center" > <h2> Water Prediction</h2>  </p>', unsafe_allow_html=True)
+st.markdown(' <h2 align="center"> Water Prediction</h2>', unsafe_allow_html=True)
 
 st.write(prediction[0])
 #st.write()
