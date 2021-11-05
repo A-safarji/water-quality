@@ -99,15 +99,12 @@ st.write(prediction)
 
 st.write(
         """
-        # Example Widgets
+        # Wait to proccess  
         
-        These widgets don't do anything. But look at all the new colors they got 👀 
+        Check your water qulity below 👀 
     
         ```python
-        # First some code.
-        streamlit = "cool"
-        theming = "fantastic"
-        both = "💥"
+        prediction
         ```
         """
     )
