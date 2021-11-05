@@ -104,12 +104,12 @@ st.write(
         Check your water qulity below 👀 
     
         ```python
-        prediction
+         
         ```
         """
     )
 
-
+st.button("🤡 Click me", key=prediction[0])
 if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
 else:
