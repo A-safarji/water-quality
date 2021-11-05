@@ -76,7 +76,7 @@ else:
 
 #ph Solids Chloramines Sulfate Trihalomethanes Turbidity
 
-st.subheader("user input fields")
+st.subheader("Your selected input fields")
 
 if uploaded_file is not None:
 	st.write(input_params)
