@@ -96,7 +96,7 @@ st.markdown('<h2 align="center">  Water Prediction </h2>  ', unsafe_allow_html=T
 #st.write(prediction[0])
 #st.write()
 #st.write(prediction)
-st.code(":bulb:",prediction[0])
+st.code(prediction[0])
 st.write(
         """
         # Wait to proccess  
