@@ -96,7 +96,7 @@ st.write(
         """
         ## Wait to proccess :bulb: 
         
-       * Check your water quality below 👀, 0 = not safe, 1= safe'
+       * Check your water quality below 👀, ' 0 = not safe, 1= safe '
     
         
         """
