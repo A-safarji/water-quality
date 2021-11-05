@@ -88,9 +88,9 @@ else:
 load_clf= load_model('dt_saved_07032020')
 prediction=load_clf.predict(input_params)
 st.write('---')
-st.subheader(":hourglass: The Prediction is")
+st.subheader(":bulb: The Prediction is")
 #st.write()
-st.write(""":bulb:==> """,prediction[0])
+st.write(prediction[0])
 if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
 else:
