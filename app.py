@@ -109,7 +109,7 @@ st.write(
         """
     )
 
-st.button("🤡 Click me", key=prediction)
+#st.button("🤡 Click me", key=prediction)
 if st.button("🤡 Click me", key=prediction):
      st.write('prediction')
 
