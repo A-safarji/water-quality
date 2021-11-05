@@ -96,6 +96,13 @@ st.markdown('<h2 align="center">  Water Prediction </h2>  ', unsafe_allow_html=T
 st.write(prediction[0])
 #st.write()
 st.write(prediction)
+st.write("""
+# Dynamic Price Prediction 
+* This app predicts the **Booking.com Prices**!
+
+ # :fire: All the emojis :tada:
+
+""")
 
 
 
