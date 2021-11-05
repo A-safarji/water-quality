@@ -94,9 +94,9 @@ st.write('---')
 st.markdown('<h2 align="center">  Water Prediction </h2>  ', unsafe_allow_html=True)
 st.write(
         """
-        # Wait to proccess  
+        # Wait to proccess :bulb: 
         
-        Check your water qulity below 👀 
+       * Check your water qulity below 👀 
     
         
         """
