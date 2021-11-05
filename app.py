@@ -98,7 +98,7 @@ st.write(prediction[0])
 st.write(prediction)
 st.write("""
    
-      * Water Prediction
+          * Water Prediction
 <h2 align="center">  Water Prediction </h2> 
  # :fire: All the emojis :tada:
 
