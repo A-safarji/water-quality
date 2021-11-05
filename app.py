@@ -96,15 +96,21 @@ st.markdown('<h2 align="center">  Water Prediction </h2>  ', unsafe_allow_html=T
 st.write(prediction[0])
 #st.write()
 st.write(prediction)
-st.write("""
-   
-          * Water Prediction
-<h2 align="center">  Water Prediction </h2> 
- # :fire: All the emojis :tada:
 
-""")
-
-
+  st.write(
+        """
+        # Example Widgets
+        
+        These widgets don't do anything. But look at all the new colors they got 👀 
+    
+        ```python
+        # First some code.
+        streamlit = "cool"
+        theming = "fantastic"
+        both = "💥"
+        ```
+        """
+    )
 
 
 if(prediction[0]==1):
