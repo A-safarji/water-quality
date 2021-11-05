@@ -91,12 +91,12 @@ st.write('---')
 #st.subheader(":bulb: The Prediction is") 
 
 
-st.markdown('<h2 align="center">  Water Prediction </h2>  ', unsafe_allow_html=True)
+st.markdown(' <p align="center" class="big-font">  <b>Water Quality <u>Prediction</b>   </p>', unsafe_allow_html=True)	
 st.write(
         """
-        # Wait to proccess :bulb: 
+        ## Wait to proccess :bulb: 
         
-       * Check your water qulity below 👀 
+       * Check your water quality below 👀 
     
         
         """
