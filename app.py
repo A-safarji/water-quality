@@ -32,7 +32,7 @@ st.markdown("""
 
 	""")
 
-st.subheader("sample values for the input")
+st.subheader("Sample values for the input")
 df=pd.read_csv("example.csv")
 #df.drop('Unnamed: 0', axis=1, inplace=True)
 df
