@@ -110,6 +110,7 @@ st.write(
     )
 
 st.button("🤡 Click me", key=prediction)
+st.write(key)
 if(prediction[0]==1):
 	st.subheader("The water is safe to drink :droplet: :thumbsup:")
 else:
