@@ -1,1 +1,1 @@
-# water-quality
+# Water Quality Prediction Classification (ML/AI)
