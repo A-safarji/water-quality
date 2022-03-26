@@ -5,5 +5,5 @@ matplotlib
 numpy
 scikit-learn
 pycaret
-pip
+pip==22.0.4
 
