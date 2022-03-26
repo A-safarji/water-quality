@@ -5,4 +5,5 @@ matplotlib
 numpy
 scikit-learn
 pycaret
+pip
 
