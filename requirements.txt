@@ -4,8 +4,5 @@ streamlit
 matplotlib
 numpy
 scikit-learn
-shap
-numpy
-xgboost
 pycaret
 
