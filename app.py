@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 from pycaret.classification import *
-import shap
 import matplotlib.pyplot as plt
 
 #st.markdown('<p align="center"> Water Quality **Estimation** </p>', unsafe_allow_html=True))
