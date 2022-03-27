@@ -6,4 +6,6 @@ The goal of the project is to classify the water usage (potable or not) based on
 
 ## Website
 Website to evaluate if water has quality or not.
-* [AKN Water Quality](https://share.streamlit.io/a-safarji/water-quality-app/main/app.py) - feel free to fork it!
+* [AKN Water Quality App](https://share.streamlit.io/a-safarji/water-quality-app/main/app.py)  
+* [About The Project](https://github.com/A-safarji/water_quality)
+* feel free to fork it!
