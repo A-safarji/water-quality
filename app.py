@@ -76,7 +76,8 @@ else:
 #ph Solids Chloramines Sulfate Trihalomethanes Turbidity
 
 st.subheader("Your selected input fields")
-
+if st.button('save dataframe'):
+    open('input_params.csv', 'w').write(input_params.to_csv())
 if uploaded_file is not None:
 	st.write(input_params)
 	input_params.to_csv(index=False)
@@ -121,5 +122,4 @@ st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
 
-if st.button('save dataframe'):
-    open('df.csv', 'w').write(df.to_csv())
+
