@@ -120,4 +120,5 @@ st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
 
-
+if st.button('save dataframe'):
+    open('df.csv', 'w').write(df.to_csv())
