@@ -79,6 +79,7 @@ st.subheader("Your selected input fields")
 
 if uploaded_file is not None:
 	st.write(input_params)
+	input_params.to_csv(index=False)
 else:
 	st.write(input_params)
 
