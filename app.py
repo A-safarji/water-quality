@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 #st.markdown('<p align="center"> Water Quality **Estimation** </p>', unsafe_allow_html=True))
 
-st.markdown(' <p align="center" class="big-font">  <b>Water Quality <u>Check</b> 🌟T5 </p>', unsafe_allow_html=True)	
+st.markdown(' <p align="center" class="big-font">  <b>Water Quality <u>Check</b> 🌟 </p>', unsafe_allow_html=True)	
 
 
 st.markdown("""
