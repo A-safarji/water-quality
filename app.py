@@ -92,7 +92,7 @@ else:
 mystr = StringIO("""name,Surname,Age,Height""")
 
 check_list = ['Name', 'Surname', 'Age', 'Height']
-df_cols = pd.read_csv(mystr, nrows=0)
+df_cols = pd.read_csv(uploaded_file, nrows=0)
 
 df_cols_list = df_cols.columns.tolist()
 
