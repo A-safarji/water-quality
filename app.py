@@ -98,7 +98,7 @@ df_cols_list = df_cols.columns.tolist()
 
 assert df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
 if (df_cols_list == check_list):
-  print('matched you can uploaded the file')
+
 	st.write('matched you can uploaded the file')
 	
 	
