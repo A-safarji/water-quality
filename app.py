@@ -136,7 +136,7 @@ if uploaded_file is not None:
 
       bytesData = pd.read_csv(uploaded_file, dtype=str) 
       bytesData
-      bytesData.columns.tolist()
+      bytesData.columns
 # 		uploaded_file
 # 		data = pd.read_csv(uploaded_file)
 # 		data	
