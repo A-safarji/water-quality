@@ -4,6 +4,9 @@ import numpy as np
 import pickle
 from pycaret.classification import *
 import matplotlib.pyplot as plt
+from io import StringIO
+
+
 
 #st.markdown('<p align="center"> Water Quality **Estimation** </p>', unsafe_allow_html=True))
 
@@ -84,6 +87,21 @@ if uploaded_file is not None:
 else:
 	st.write(input_params)
 
+	
+
+mystr = input_params.columns
+
+check_list = ['Name', 'Surname', 'Age', 'Height']
+df_cols = pd.read_csv(mystr, nrows=0)
+
+df_cols_list = df_cols.columns.tolist()
+
+assert df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
+if (df_cols_list == check_list):
+  print('matched you can uploaded the file')
+	st.write('matched you can uploaded the file')
+	
+	
 #load_clf=pickle.load(open('dt_saved_07032020.pkl','rb'))
 #load_clf= pd.read_csv("water1.csv")
 load_clf= load_model('dt_saved_07032020')
