@@ -56,6 +56,17 @@ uploaded_file=st.sidebar.file_uploader("Upload your csv file in the same input a
 
 if uploaded_file is not None:
 	input_params=pd.read_csv(uploaded_file)
+	check_list = ['Name', 'Surname', 'Age', 'Height']
+
+	df_cols = pd.read_csv(uploaded_file, nrows=0)
+
+	df_cols_list = df_cols.columns.tolist()
+
+	#df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
+	if (df_cols_list != check_list):
+		st.write('not matched')
+	if (df_cols_list == check_list):
+		st.write('matched you can uploaded the file')
 
 else:
 	ph=st.sidebar.slider("ph value",0.1,28.3,7.5)
@@ -89,18 +100,9 @@ else:
 
 	
 
-mystr = StringIO("""name,Surname,Age,Height""")
+#str = StringIO("""name,Surname,Age,Height""")
 
-check_list = ['Name', 'Surname', 'Age', 'Height']
-df_cols = pd.read_csv(uploaded_file, nrows=0)
 
-df_cols_list = df_cols.columns.tolist()
-
-#df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
-if (df_cols_list != check_list):
-	st.write('not matched')
-if (df_cols_list == check_list):
-	st.write('matched you can uploaded the file')
 	
 	
 #load_clf=pickle.load(open('dt_saved_07032020.pkl','rb'))
