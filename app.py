@@ -79,11 +79,11 @@ else:
 #ph Solids Chloramines Sulfate Trihalomethanes Turbidity
 
 st.subheader("Your selected input fields")
-if st.button('save dataframe'):
-    open('input_params.csv', 'w').write(input_params.to_csv())
+# if st.button('save dataframe'):
+#     open('input_params.csv', 'w').write(input_params.to_csv())
 if uploaded_file is not None:
 	st.write(input_params)
-	input_params.to_csv(index=False)
+	#input_params.to_csv(index=False)
 else:
 	st.write(input_params)
 
@@ -98,7 +98,6 @@ df_cols_list = df_cols.columns.tolist()
 
 assert df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
 if (df_cols_list == check_list):
-  
 	st.write('matched you can uploaded the file')
 	
 	
