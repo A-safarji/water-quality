@@ -135,10 +135,7 @@ st.write('---')
 if uploaded_file is not None:
 
       bytesData = uploaded_file.getvalue()
-      encoding = encodingUTF8 
-      s=str(bytesData,encoding)
-      result = StringIO(s) 
-      result
+      bytesData
 # 		uploaded_file
 # 		data = pd.read_csv(uploaded_file)
 # 		data	
