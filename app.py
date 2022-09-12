@@ -135,8 +135,9 @@ st.write('---')
 if uploaded_file is not None:
 
       bytesData = pd.read_csv(uploaded_file) 
-      bytesData
-      bytesData.columns
+      
+      
+      st.write(bytesData)
 # 		uploaded_file
 # 		data = pd.read_csv(uploaded_file)
 # 		data	
