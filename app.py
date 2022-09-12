@@ -75,6 +75,29 @@ uploaded_file=st.sidebar.file_uploader("Upload your csv file in the same input a
 # 	features=pd.DataFrame(dict_values,index=[0])
 # 	input_params=features
 
+if uploaded_file is not None:
+
+      bytesData = pd.read_csv(uploaded_file) 
+      
+      
+      st.write(bytesData)
+# 		uploaded_file
+# 		data = pd.read_csv(uploaded_file)
+# 		data	
+
+check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
+
+df_cols = pd.read_csv("example.csv", nrows=0)
+
+df_cols_list = df_cols.columns.tolist()
+
+#df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
+if (df_cols_list != check_list):
+	st.write('not matched')
+if (df_cols_list == check_list):
+	st.write('matched you can uploaded the file')
+
+
 
 
 # #ph Solids Chloramines Sulfate Trihalomethanes Turbidity
@@ -132,26 +155,3 @@ else:
 st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
-if uploaded_file is not None:
-
-      bytesData = pd.read_csv(uploaded_file) 
-      
-      
-      st.write(bytesData)
-# 		uploaded_file
-# 		data = pd.read_csv(uploaded_file)
-# 		data	
-
-check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
-
-df_cols = pd.read_csv("example.csv", nrows=0)
-
-df_cols_list = df_cols.columns.tolist()
-
-#df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
-if (df_cols_list != check_list):
-	st.write('not matched')
-if (df_cols_list == check_list):
-	st.write('matched you can uploaded the file')
-
-
