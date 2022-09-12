@@ -132,9 +132,11 @@ else:
 st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
-uploaded_file
-data = pd.read_csv(uploaded_file)
-data
+if uploaded_file is not None:
+	uploaded_file
+	data = pd.read_csv(uploaded_file)
+	data	
+
 check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
 
 df_cols = pd.read_csv("example.csv", nrows=0)
