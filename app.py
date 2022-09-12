@@ -133,9 +133,15 @@ st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
 if uploaded_file is not None:
-	uploaded_file
-	data = pd.read_csv(uploaded_file)
-	data	
+	try:
+	      bytesData = uploaded_file.getvalue()
+	      encoding = encodingUTF8 
+	      s=str(bytesData,encoding)
+	      result = StringIO(s) 
+	      result
+# 		uploaded_file
+# 		data = pd.read_csv(uploaded_file)
+# 		data	
 
 check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
 
