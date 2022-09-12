@@ -54,39 +54,39 @@ st.sidebar.title("Select your Input  Values")
 
 uploaded_file=st.sidebar.file_uploader("Upload your csv file in the same input as the example csv file",type=["csv"])
 
-if uploaded_file is not None:
-	input_params=pd.read_csv(uploaded_file)
+# if uploaded_file is not None:
+# 	input_params=pd.read_csv(uploaded_file)
 	
 
-else:
-	ph=st.sidebar.slider("ph value",0.1,28.3,7.5)
-	Hardness=st.sidebar.slider("Hardness value",47.432,323.3,118.2)
-	Solids=st.sidebar.slider("Solids value(mg/L) ",181.4,30000.0,14285.58)
-	Chloramines=st.sidebar.slider("Chloramines value",0.1,28.3,9.27)
-	Sulfate=st.sidebar.slider("Sulfate value(mg/L)",47.432,400.3,333.07)
-	Conductivity=st.sidebar.slider("Conductivity value(μS/cm)",181.4,753.2,418.60)
-	Organic_carbon=st.sidebar.slider("Organic Carbon value(mg/L)",2.1,28.3,16.86)
-	Trihalomethanes=st.sidebar.slider("Trihalomethanesvalue(ppm)",47.432,323.3,66.42)
-	Turbidity=st.sidebar.slider("Turbidity value(NTU)",0.1,28.3,3.05)
+# else:
+# 	ph=st.sidebar.slider("ph value",0.1,28.3,7.5)
+# 	Hardness=st.sidebar.slider("Hardness value",47.432,323.3,118.2)
+# 	Solids=st.sidebar.slider("Solids value(mg/L) ",181.4,30000.0,14285.58)
+# 	Chloramines=st.sidebar.slider("Chloramines value",0.1,28.3,9.27)
+# 	Sulfate=st.sidebar.slider("Sulfate value(mg/L)",47.432,400.3,333.07)
+# 	Conductivity=st.sidebar.slider("Conductivity value(μS/cm)",181.4,753.2,418.60)
+# 	Organic_carbon=st.sidebar.slider("Organic Carbon value(mg/L)",2.1,28.3,16.86)
+# 	Trihalomethanes=st.sidebar.slider("Trihalomethanesvalue(ppm)",47.432,323.3,66.42)
+# 	Turbidity=st.sidebar.slider("Turbidity value(NTU)",0.1,28.3,3.05)
 
-	dict_values={"ph":ph, "Hardness":Hardness, "Solids":Solids,"Chloramines":Chloramines,"Sulfate":Sulfate,
-		     "Conductivity":Conductivity,"Organic_carbon":Organic_carbon,
-		     "Trihalomethanes":Trihalomethanes,"Turbidity":Turbidity}
-	features=pd.DataFrame(dict_values,index=[0])
-	input_params=features
+# 	dict_values={"ph":ph, "Hardness":Hardness, "Solids":Solids,"Chloramines":Chloramines,"Sulfate":Sulfate,
+# 		     "Conductivity":Conductivity,"Organic_carbon":Organic_carbon,
+# 		     "Trihalomethanes":Trihalomethanes,"Turbidity":Turbidity}
+# 	features=pd.DataFrame(dict_values,index=[0])
+# 	input_params=features
 
 
 
-#ph Solids Chloramines Sulfate Trihalomethanes Turbidity
+# #ph Solids Chloramines Sulfate Trihalomethanes Turbidity
 
-st.subheader("Your selected input fields")
-# if st.button('save dataframe'):
-#     open('input_params.csv', 'w').write(input_params.to_csv())
-if uploaded_file is not None:
-	st.write(input_params)
-	#input_params.to_csv(index=False)
-else:
-	st.write(input_params)
+# st.subheader("Your selected input fields")
+# # if st.button('save dataframe'):
+# #     open('input_params.csv', 'w').write(input_params.to_csv())
+# if uploaded_file is not None:
+# 	st.write(input_params)
+# 	#input_params.to_csv(index=False)
+# else:
+# 	st.write(input_params)
 
 	
 
