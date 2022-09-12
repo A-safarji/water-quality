@@ -96,7 +96,9 @@ df_cols = pd.read_csv(uploaded_file, nrows=0)
 
 df_cols_list = df_cols.columns.tolist()
 
-assert df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
+#df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
+if (df_cols_list != check_list):
+	st.write('not matched')
 if (df_cols_list == check_list):
 	st.write('matched you can uploaded the file')
 	
