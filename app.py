@@ -89,7 +89,7 @@ else:
 
 	
 
-mystr = input_params.columns
+mystr = StringIO("""name,Surname,Age,Height""")
 
 check_list = ['Name', 'Surname', 'Age', 'Height']
 df_cols = pd.read_csv(mystr, nrows=0)
@@ -98,7 +98,7 @@ df_cols_list = df_cols.columns.tolist()
 
 assert df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
 if (df_cols_list == check_list):
-
+  
 	st.write('matched you can uploaded the file')
 	
 	
