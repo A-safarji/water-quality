@@ -133,8 +133,8 @@ st.write('* Thanks for useing AKN Water Quality ')
 
 st.write('---')
 uploaded_file
-raw_data = stu.load_data(uploaded_file)
-raw_data
+data = pd.read_csv(uploaded_file)
+data
 check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
 
 df_cols = pd.read_csv("example.csv", nrows=0)
