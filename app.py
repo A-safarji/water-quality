@@ -56,7 +56,7 @@ uploaded_file=st.sidebar.file_uploader("Upload your csv file in the same input a
 
 if uploaded_file is not None:
 	input_params=pd.read_csv(uploaded_file)
-	check_list = ['Name', 'Surname', 'Age', 'Height']
+	check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
 
 	df_cols = pd.read_csv(uploaded_file, nrows=0)
 
