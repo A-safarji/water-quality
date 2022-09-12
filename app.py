@@ -137,7 +137,7 @@ check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
 
 df_cols = pd.read_csv(uploaded_file, nrows=0)
 
-df_cols_list = input_params.columns.tolist()
+df_cols_list = df_cols.columns.tolist()
 
 #df_cols_list == check_list, "Columns are misaligned: {0} vs {1}".format(df_cols_list, check_list)
 if (df_cols_list != check_list):
