@@ -135,7 +135,7 @@ st.write('---')
 
 check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
 
-df_cols = pd.read_csv(uploaded_file, nrows=0)
+df_cols = pd.read_csv("example.csv", nrows=0)
 
 df_cols_list = df_cols.columns.tolist()
 
