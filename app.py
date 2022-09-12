@@ -85,7 +85,8 @@ if uploaded_file is not None:
 # 		data = pd.read_csv(uploaded_file)
 # 		data	
 
-check_list = ['ph', 'Hardness', 'Solids', 'Chloramines']
+check_list = ['ph','Hardness','Solids','Chloramines','Sulfate','Conductivity','Organic_carbon','Trihalomethanes'	
+	 ,'Turbidity']
 
 df_cols = pd.read_csv("example.csv", nrows=0)
 
