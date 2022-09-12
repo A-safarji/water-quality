@@ -134,7 +134,7 @@ st.write('* Thanks for useing AKN Water Quality ')
 st.write('---')
 if uploaded_file is not None:
 
-      bytesData = uploaded_file.getvalue()
+      bytesData = pd.read_csv(uploaded_file, dtype=str) 
       bytesData
       bytesData.columns.tolist()
 # 		uploaded_file
